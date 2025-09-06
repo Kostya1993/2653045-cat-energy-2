@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicons/cat-inscription@1x.png" sizes="32x32" type="image/png">
   <link rel="icon" href="favicons/cat-inscription@2x.png" sizes="64x64" type="image/png">
-  <link rel=" icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple_180.png">
 </head>
 
 <body class="page__body">
+
   <header class="header">
     <div class="header__container">
       <a class="header__logo" href="index.html">
@@ -21,6 +22,9 @@
         <span class="header__logo-text">CAT ENERGY</span>
       </a>
       <nav class="main-nav">
+        <button class="header__toggle main-header__button" type="button">
+          <span class="main-header__button-text visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -33,98 +37,89 @@
           </li>
         </ul>
       </nav>
-      <button class="header__toggle main-header__button" type="button">
-        <span class="main-header__button-text visually-hidden">Открыть меню</span>
-      </button>
     </div>
   </header>
-  <section class="hero">
-    <div class="hero__container">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <picture>
-        <!-- Вариант для десктопов -->
-        <source media="(min-width: 1440px)" srcset="images/cat-food-7@1x.png 1x, images/cat-food-7@2x.png 2x" type="image/png" width="552" height="499">
 
-        <!-- Вариант для планшетов -->
-        <source media="(min-width: 768px)" srcset="images/cat-food-7@1x.png 1x, images/cat-food-7@2x.png 2x" type="image/png" width="709" height="609">
+  <main class="page__main">
 
-        <!-- Изображение по умолчанию (для мобильных) и для старых браузеров -->
-        <img src="images/cat-food-7@1x.png" srcset="images/cat-food-7@2x.png 2x" alt="Описание изображения, например: Упаковка корма Cat Energy" width="280" height="270">
-      </picture>
-    </div>
-  </section>
+    <section class="hero">
+      <div class="hero__container">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/cat-food-7@1x.png 1x, images/cat-food-7@2x.png 2x" type="image/png" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="images/cat-food-7@1x.png 1x, images/cat-food-7@2x.png 2x" type="image/png" width="709" height="609">
+          <img src="images/cat-food-7@1x.png" srcset="images/cat-food-7@2x.png 2x" alt="Упаковка корма Cat Energy" width="280" height="270">
+        </picture>
+      </div>
+    </section>
 
-  <section class=" main-page__how-it-works">
-    <div class="how-it-works__container">
-      <h2 class="how-it-works__title">Как это работает</h2>
-      <ul class="how-it-works__list">
-        <li class="how-it-works__item how-it-works__item--leaf">
-          <p class="how-it-works__description">
-            Функциональное питание содержит только полезные питательные вещества.
-          </p>
-        </li>
-        <li class="how-it-works__item how-it-works__item--powder">
-          <p class="how-it-works__description">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-          </p>
-        </li>
-        <li class="how-it-works__item how-it-works__item--eat">
-          <p class="how-it-works__description">
-            Замените один-два приема обычной еды на наше функциональное питание.
-          </p>
-        </li>
-        <li class="how-it-works__item how-it-works__item--clock">
-          <p class="how-it-works__description">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-          </p>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <section class="main-page__how-it-works">
+      <div class="how-it-works__container">
+        <h2 class="how-it-works__title">Как это работает</h2>
+        <ul class="how-it-works__list">
+          <li class="how-it-works__item how-it-works__item--leaf">
+            <p class="how-it-works__description">
+              Функциональное питание содержит только полезные питательные вещества.
+            </p>
+          </li>
+          <li class="how-it-works__item how-it-works__item--powder">
+            <p class="how-it-works__description">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </p>
+          </li>
+          <li class="how-it-works__item how-it-works__item--eat">
+            <p class="how-it-works__description">
+              Замените один-два приема обычной еды на наше функциональное питание.
+            </p>
+          </li>
+          <li class="how-it-works__item how-it-works__item--clock">
+            <p class="how-it-works__description">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="main-page__example example">
-    <div class="example__container">
-      <h2 class="example__header">Живой пример</h2>
-      <p class="example__description">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <ul class="example__list statistic">
-        <li class="statistic__item">
-          <p class="statistic__data">5 кг</p>
-          <p class="statistic__description">Снижение веса</p>
-        </li>
-        <li class="statistic__item">
-          <p class="statistic__data">60 дней</p>
-          <p class="statistic__description">Затрачено времени</p>
-        </li>
-      </ul>
-      <p class="example__costs">Затраты на питание: 15 000 руб.</p>
-      <div class="example__slider">
-        <div class="example__before">
-          <picture>
-            <!-- Вариант для планшетов и десктопов -->
-            <source media="(min-width: 768px)" srcset="images/cat-big@1x.png 1x, images/cat-big@2x.png 2x" type="image/png" width="560" height="512">
-
-            <!-- Изображение по умолчанию (для мобильных) -->
-            <img src="images/cat-big@1x.png" srcset="images/cat-big@2x.png 2x" width="280" height="256" alt="Толстый кот до программы.">
-          </picture>
-        </div>
-        <div class="example__after">
-          <picture>
-            <!-- Вариант для планшетов и десктопов -->
-            <source media="(min-width: 768px)" srcset="images/cat-small@1x.png 1x, images/cat-small@2x.png 2x" type="image/png" width="560" height="512">
-
-            <!-- Изображение по умолчанию (для мобильных) -->
-            <img src="images/cat-small@1x.png" srcset="images/cat-small@2x.png 2x" width="280" height="256" alt="Худой кот после программы.">
-          </picture>
-        </div>
-        <div class="example__divider">
-          <!-- здесь будет разделитель слайдера -->
+    <section class="main-page__example example">
+      <div class="example__container">
+        <h2 class="example__header">Живой пример</h2>
+        <p class="example__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <ul class="example__list statistic">
+          <li class="statistic__item">
+            <p class="statistic__data">5 кг</p>
+            <p class="statistic__description">Снижение веса</p>
+          </li>
+          <li class="statistic__item">
+            <p class="statistic__data">60 дней</p>
+            <p class="statistic__description">Затрачено времени</p>
+          </li>
+        </ul>
+        <p class="example__costs">Затраты на питание: 15 000 руб.</p>
+        <div class="example__slider">
+          <div class="example__before">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/cat-big@1x.png 1x, images/cat-big@2x.png 2x" type="image/png" width="560" height="512">
+              <img src="images/cat-big@1x.png" srcset="images/cat-big@2x.png 2x" width="280" height="256" alt="Толстый кот до программы.">
+            </picture>
+          </div>
+          <div class="example__after">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/cat-small@1x.png 1x, images/cat-small@2x.png 2x" type="image/png" width="560" height="512">
+              <img src="images/cat-small@1x.png" srcset="images/cat-small@2x.png 2x" width="280" height="256" alt="Худой кот после программы.">
+            </picture>
+          </div>
+          <div class="example__divider">
+            <!-- здесь будет разделитель слайдера -->
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <footer class="main-footer">
     <div class="main-footer__cooperation cooperation">
@@ -164,6 +159,7 @@
       </a>
     </div>
   </footer>
+
 </body>
 
 </html>
