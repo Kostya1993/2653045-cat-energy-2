@@ -3,20 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cat Energy - Каталог продукции</title>
+  <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicons/cat-inscription@1x.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="favicons/cat-inscription@2x.png" sizes="64x64" type="image/png">
-  <link rel=" icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple_180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="scripts/index.js" defer></script>
 </head>
 
-<body class=" page__body">
+<body class="page__body">
   <header class="main-header">
     <a class="main-header__link" href="index.html">
-      <img class="main-header__logo" src="images/logo-pic@1x.png" alt=" Cat Energy" width="33" height="38">
+      <img class="main-header__logo" src="#" width="33" height="38" alt="Логотип сайта Cat Energy.">
     </a>
 
     <nav class="main-header__navigation site-navigation">
@@ -28,7 +28,7 @@
           <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-navigation__item">
-          <a class="site-navigation__link" href="form.html">Подбор программы</a>
+          <a class="site-navigation__link" href="programms.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -44,12 +44,12 @@
       <h2 class="main-goods__header visually-hidden">Корма для котов</h2>
 
       <ul class="main-goods__list">
-        <!-- Товар 1 -->
         <li class="main-goods__item good-card">
           <a class="good-card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="images/catalog-1-mobile.jpg 1x, images/catalog-1-mobile@2x.jpg 2x" type="image/jpg" width="140" height="107">
-              <img class="good-card__image" src="images/catalog-1-mobile.jpg" srcset="images/catalog-1-mobile@2x.jpg 2x" width="140" height="107" alt="Cat Energy PRO 500 г">
+              <source media="(min-width: 1440px)" srcset="images/catalog/catalog_chicken_500_desktop@1x.png 1x, images/catalog/catalog_chicken_500_desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/catalog/catalog_chicken_500_tablet@1x.png 1x, images/catalog/catalog_chicken_500_tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="good-card__image" src="images/catalog/catalog_chicken_500_mobile@1x.png" srcset="images/catalog/catalog_chicken_500_mobile@2x.png 2x" width="140" height="107" alt="Изображение товара.">
             </picture>
           </a>
           <a class="good-card__header-link" href="#">
@@ -66,18 +66,18 @@
             </li>
             <li class="good-specifications__item">
               <span class="good-specifications__key">Цена</span>
-              <span class="good-specifications__value">700 Р.</span>
+              <span class="good-specifications__value">700 ₽</span>
             </li>
           </ul>
           <a class="good-card__button button" href="#">Заказать</a>
         </li>
 
-        <!-- Товар 2 -->
         <li class="main-goods__item good-card">
           <a class="good-card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="images/cat-food@1x.png, images/cat-food@2x.png" type="image/jpg" width="140" height="107">
-              <img class="good-card__image" src="images/cat-food@1x.png" srcset="images/images/cat-food@1x.png" width="140" height="107" alt="Cat Energy PRO 1000 г">
+              <source media="(min-width: 1440px)" srcset="images/catalog/catalog_chicken_1000_desktop@1x.png 1x, images/catalog/catalog_chicken_1000_desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/catalog/catalog_chicken_1000_tablet@1x.png 1x, images/catalog/catalog_chicken_1000_tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="good-card__image" src="images/catalog/catalog_chicken_1000_mobile@1x.png" srcset="images/catalog/catalog_chicken_1000_mobile@2x.png 2x" width="140" height="107" alt="Изображение товара.">
             </picture>
           </a>
           <a class="good-card__header-link" href="#">
@@ -94,18 +94,18 @@
             </li>
             <li class="good-specifications__item">
               <span class="good-specifications__key">Цена</span>
-              <span class="good-specifications__value">1000 Р.</span>
+              <span class="good-specifications__value">1000 ₽</span>
             </li>
           </ul>
           <a class="good-card__button button" href="#">Заказать</a>
         </li>
 
-        <!-- Товар 3 -->
         <li class="main-goods__item good-card">
           <a class="good-card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="images/cat-food-3@1x.png, images/cat-food-3@2x.png" type="image/jpg" width="140" height="107">
-              <img class="good-card__image" src="images/cat-food-3@1x.png" srcset="images/cat-food-3@2x.png" width="140" height="107" alt="Cat Energy PRO 500 г">
+              <source media="(min-width: 1440px)" srcset="images/catalog/catalog_fish_500_desktop@1x.png 1x, images/catalog/catalog_fish_500_desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/catalog/catalog_fish_500_tablet@1x.png 1x, images/catalog/catalog_fish_500_tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="good-card__image" src="images/catalog/catalog_fish_500_mobile@1x.png" srcset="images/catalog/catalog_fish_500_mobile@2x.png 2x" width="140" height="107" alt="Изображение товара.">
             </picture>
           </a>
           <a class="good-card__header-link" href="#">
@@ -122,18 +122,18 @@
             </li>
             <li class="good-specifications__item">
               <span class="good-specifications__key">Цена</span>
-              <span class="good-specifications__value">700 Р.</span>
+              <span class="good-specifications__value">700 ₽</span>
             </li>
           </ul>
           <a class="good-card__button button" href="#">Заказать</a>
         </li>
 
-        <!-- Товар 4 -->
         <li class="main-goods__item good-card">
           <a class="good-card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="images/cat-food-2@1x.png, images/cat-food-2@2x.png" type="image/jpg" width="140" height="107">
-              <img class="good-card__image" src="images/cat-food-2@1x.png" srcset="images/cat-food-2@2x.png" width="140" height="107" alt="Cat Energy PRO 1000 г">
+              <source media="(min-width: 1440px)" srcset="images/catalog/catalog_fish_1000_desktop@1x.png 1x, images/catalog/catalog_fish_1000_desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/catalog/catalog_fish_1000_tablet@1x.png 1x, images/catalog/catalog_fish_1000_tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="good-card__image" src="images/catalog/catalog_fish_1000_mobile@1x.png" srcset="images/catalog/catalog_fish_1000_mobile@2x.png 2x" width="140" height="107" alt="Изображение товара.">
             </picture>
           </a>
           <a class="good-card__header-link" href="#">
@@ -150,18 +150,18 @@
             </li>
             <li class="good-specifications__item">
               <span class="good-specifications__key">Цена</span>
-              <span class="good-specifications__value">1000 Р.</span>
+              <span class="good-specifications__value">1000 ₽</span>
             </li>
           </ul>
           <a class="good-card__button button" href="#">Заказать</a>
         </li>
 
-        <!-- Товар 5 -->
         <li class="main-goods__item good-card">
           <a class="good-card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="images/cat-food-4@1x.png, images/cat-food-4@2x.png" type="image/jpg" width="140" height="107">
-              <img class="good-card__image" src="images/cat-food-4@1x.png" srcset="images/cat-food-4@2x.png" width="140" height="107" alt="Cat Energy SLIM 500 г">
+              <source media="(min-width: 1440px)" srcset="images/catalog/catalog_buckwheat_500_desktop@1x.png 1x, images/catalog/catalog_buckwheat_500_desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/catalog/catalog_buckwheat_500_tablet@1x.png 1x, images/catalog/catalog_buckwheat_500_tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="good-card__image" src="images/catalog/catalog_buckwheat_500_mobile@1x.png" srcset="images/catalog/catalog_buckwheat_500_mobile@2x.png 2x" width="140" height="107" alt="Изображение товара.">
             </picture>
           </a>
           <a class="good-card__header-link" href="#">
@@ -178,18 +178,18 @@
             </li>
             <li class="good-specifications__item">
               <span class="good-specifications__key">Цена</span>
-              <span class="good-specifications__value">400 Р.</span>
+              <span class="good-specifications__value">400 ₽</span>
             </li>
           </ul>
           <a class="good-card__button button" href="#">Заказать</a>
         </li>
 
-        <!-- Товар 6 -->
         <li class="main-goods__item good-card">
           <a class="good-card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="images/cat-food-6@1x.png, images/cat-food-6@2x.png" type="image/jpg" width="140" height="107">
-              <img class="good-card__image" src="images/cat-food-6@1x.png" srcset="images/cat-food-6@2x.png" width="140" height="107" alt="Cat Energy SLIM 1000 г">
+              <source media="(min-width: 1440px)" srcset="images/catalog/catalog_buckwheat_1000_desktop@1x.png 1x, images/catalog/catalog_buckwheat_1000_desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/catalog/catalog_buckwheat_1000_tablet@1x.png 1x, images/catalog/catalog_buckwheat_1000_tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="good-card__image" src="images/catalog/catalog_buckwheat_1000_mobile@1x.png" srcset="images/catalog/catalog_buckwheat_1000_mobile@2x.png 2x" width="140" height="107" alt="Изображение товара.">
             </picture>
           </a>
           <a class="good-card__header-link" href="#">
@@ -206,18 +206,18 @@
             </li>
             <li class="good-specifications__item">
               <span class="good-specifications__key">Цена</span>
-              <span class="good-specifications__value">700 Р.</span>
+              <span class="good-specifications__value">700 ₽</span>
             </li>
           </ul>
           <a class="good-card__button button" href="#">Заказать</a>
         </li>
 
-        <!-- Товар 7 -->
         <li class="main-goods__item good-card">
           <a class="good-card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="images/cat-food-5@1x.png, images/cat-food-5@2x.png" type="image/jpg" width="140" height="107">
-              <img class="good-card__image" src="images/cat-food-5@1x.png" srcset="images/cat-food-5@2x.png" width="140" height="107" alt="Cat Energy SLIM 500 г">
+              <source media="(min-width: 1440px)" srcset="images/catalog/catalog_rice_500_desktop@1x.png 1x, images/catalog/catalog_rice_500_desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="images/catalog/catalog_rice_500_tablet@1x.png 1x, images/catalog/catalog_rice_500_tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="good-card__image" src="images/catalog/catalog_rice_500_mobile@1x.png" srcset="images/catalog/catalog_rice_500_mobile@2x.png 2x" width="140" height="107" alt="Изображение товара.">
             </picture>
           </a>
           <a class="good-card__header-link" href="#">
@@ -234,7 +234,7 @@
             </li>
             <li class="good-specifications__item">
               <span class="good-specifications__key">Цена</span>
-              <span class="good-specifications__value">500 Р.</span>
+              <span class="good-specifications__value">500 ₽</span>
             </li>
           </ul>
           <a class="good-card__button button" href="#">Заказать</a>
@@ -252,50 +252,46 @@
       <h2 class="additional-goods__header">Дополнительные товары</h2>
 
       <ul class="additional-goods__list">
-        <!-- Дополнительный товар 1 -->
         <li class="additional-goods__item additional-good-card">
           <a class="additional-good-card__header-link" href="#">
             <h3 class="additional-good-card__header">Сахарозаменитель</h3>
           </a>
           <p class="additional-good-card__description">
             <span class="additional-good-card__key">1 упаковка (100 г)</span>
-            <span class="additional-good-card__value">200 Р.</span>
+            <span class="additional-good-card__value">200 ₽</span>
           </p>
           <a class="additional-good-card__button button" href="#">Заказать</a>
         </li>
 
-        <!-- Дополнительный товар 2 -->
         <li class="additional-goods__item additional-good-card">
           <a class="additional-good-card__header-link" href="#">
             <h3 class="additional-good-card__header">Питьевая вода</h3>
           </a>
           <p class="additional-good-card__description">
             <span class="additional-good-card__key">5 литров</span>
-            <span class="additional-good-card__value">50 Р.</span>
+            <span class="additional-good-card__value">50 ₽</span>
           </p>
           <a class="additional-good-card__button button" href="#">Заказать</a>
         </li>
 
-        <!-- Дополнительный товар 3 -->
         <li class="additional-goods__item additional-good-card">
           <a class="additional-good-card__header-link" href="#">
             <h3 class="additional-good-card__header">Молоко</h3>
           </a>
           <p class="additional-good-card__description">
             <span class="additional-good-card__key">1 литр</span>
-            <span class="additional-good-card__value">100 Р.</span>
+            <span class="additional-good-card__value">100 ₽</span>
           </p>
           <a class="additional-good-card__button button" href="#">Заказать</a>
         </li>
 
-        <!-- Дополнительный товар 4 -->
         <li class="additional-goods__item additional-good-card">
           <a class="additional-good-card__header-link" href="#">
             <h3 class="additional-good-card__header">Витамины</h3>
           </a>
           <p class="additional-good-card__description">
             <span class="additional-good-card__key">1 упаковка (30 г)</span>
-            <span class="additional-good-card__value">300 Р.</span>
+            <span class="additional-good-card__value">300 ₽</span>
           </p>
           <a class="additional-good-card__button button" href="#">Заказать</a>
         </li>
