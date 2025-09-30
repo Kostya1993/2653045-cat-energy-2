@@ -1,0 +1,21 @@
+.button {
+  font-family: $main-header;
+  color: $header-color-invert;
+  background-color: $theme-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $theme-color-lighter;
+  }
+
+  &:active {
+    background-color: $theme-color-lighter;
+  }
+
+  &:active .button__text {
+    opacity: 30%;
+  }
+}
