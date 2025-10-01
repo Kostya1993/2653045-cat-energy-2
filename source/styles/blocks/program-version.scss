@@ -1,6 +1,6 @@
 .programm-version {
   position: relative;
-  padding: 30px 20px 18px;
+  padding: 30px 20px 19px;
   background-color: $background-color-secondary;
 
   @media (min-width: $tablet-width) {
@@ -8,7 +8,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
     width: 457px;
+    min-height: 242px;
     padding: 77px 61px 55px 52px;
   }
 
@@ -98,6 +101,7 @@
 }
 
 .programm-version__header {
+  min-height: 37px;
   margin: 0 0 29px;
   padding: 0 0 0 70px;
   font-family: $main-header;
@@ -107,6 +111,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    min-height: 36px;
     margin: 0 0 24px;
     padding: 0;
     font-size: 36px;
@@ -137,13 +142,14 @@
 
   @media (min-width: $desktop-width) {
     min-height: 72px;
-    margin: 0 0 23px;
+    margin: 0 0 auto;
   }
 }
 
 .programm-version__link {
   position: relative;
   display: inline-block;
+  min-height: 16px;
   padding: 4px 37px 4px 0;
   font-family: $main-header;
   font-size: 16px;
@@ -153,25 +159,35 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    min-height: 20px;
     padding: 9px 37px 9px 0;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    place-self: start end;
+    padding-top: 10px;
   }
 
   &::after {
     content: "";
     position: absolute;
     top: 7px;
-    right: -7px;
+    right: -11px;
     display: block;
     width: 32px;
-    height: 10px;
+    height: 12px;
     background-image: url("../../icons/stack.svg#programm_arrow");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       top: 14px;
-      right: -17px;
+      right: -20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -21px;
     }
   }
 
