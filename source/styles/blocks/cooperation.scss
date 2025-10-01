@@ -77,24 +77,28 @@
 }
 
 .cooperation__map {
-  background-image: url("../../images/map_mobile@2x.png");
+  background-image: url("../../images/map-mobile@2x.png");
   background-size: cover;
   background-position: center;
   background-color: #aadaff;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../images/map_tablet@2x.png");
+    background-image: url("../../images/map-tablet@2x.png");
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    background-image: url("../../images/map_desktop@2x.png");
+    background-image: url("../../images/map-desktop@2x.png);
   }
 }
 
 .cooperation__map-insert {
   display: block;
+  width: 100%;
+  border: none;
+  height: 362px;
+
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
